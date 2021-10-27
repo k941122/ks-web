@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style_gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" src="https://code.jquery.com/jquery-2.2.4.js">
+    <script src="./javascript/prefixfree.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="main">
+        <!--header-->
+
+     <header>
+        <div class="headerwrap">
+         <div class="logo"><img src="image/opust_logo_white_ver.png" alt=""></div>
+         <nav>
+           <ul>
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="brand.html">Brand</a></li>
+            <li><a href="landmark.html">Landmark</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="news.html">News</a></li>
+           </ul>
+         </nav>
+
+         <label for="toggle" class="toglle"><i class="fas fa-bars"></i></label>
+         <input type="checkbox" id="toggle">
+          <ul id="nav">
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="brand.html">Brand</a></li>
+            <li><a href="landmark.html">Landmark</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="news.html">News</a></li>
+          </ul>
+
+
+         </div>
+       </header>
+   
+     <!--header_end-->
+     
+     <!--first section-->
+    <section class="first">
+        <div class="first_wrap">
+            
+        </div>
+        <div class="text_box">
+            <h1>Gallery</h1>
+            <p>Precious Beauty, Perfect Life, Just For You.</p>
+        </div>
+        <div class="scroll_text">
+            <p>Scroll Down</p>
+            <p>▽</p>
+        </div>
+    </section>
+     
+     <!--first section end-->
+
+     <!-- second section -->
+
+     <section class="second">
+       <div class="second_wrap">
+
+        <div class="hero">
+
+          <div class="btn-box">
+            <button id="btn1" onclick="openHTML()">Gallery Information</button>
+            <button id="btn2" onclick="openCSS()">Gallery Location</button>
+            <button id="btn3" onclick="openJS()">Gallery Rentation</button>
+          </div>
+          <div id="content1" class="content">
+            <div class="content-left">
+              <h1>Gallery information</h1>
+              <p>OPUST 갤러리는 프리미엄을 담고 있는 브랜드의 정체성을 보여주는 장소입니다. 고귀한 당신만의 프레스티지를 누려보세요.</p>
+              <p>Premium of you</p>
+            </div>
+            <div class="content-right">
+              <img src="image/gallery/florian-roost-EbFFOoy3XyQ-unsplash.jpg" alt="">
+
+              </div>
+          </div>
+          
+          <div id="content2" class="content">
+            <div class="content-left">
+              <h1>Gallery Lotation</h1>
+              <p>가장 품위 있고 고귀한 당신만을 위한 OPUST Gallery는 그 가치와 감동을 전할수 있는 특별한 곳에 위치해 있습니다.</p>
+              <p>서울특별시 강남구 청담동 80-001 번지 OPUST Gallery</p>
+            </div>
+            <div class="content-right">
+              <img src="image/gallery/gallery_infor_img3.jpg" alt="">
+                
+              </div>
+            
+          </div>
+          <div id="content3" class="content">
+            <div class="content-left">
+              <h1>Gallery Rentation</h1>
+              <p>특별한 시간을 보낼때는 특별한 장소가 필요합니다. 단하나의 마스터 피스 OPUST 브랜드가 주는 프리미엄속에서 그 시간을 보내보세요.</p>
+              <p>예약 문의 : 1588-1001</p>
+            </div>
+            <div class="content-right">
+              <img src="image/gallery/gallery_backimg1.jpg" alt="">
+                
+              </div>
+            
+          </div>
+        </div> 
+        
+        <script>
+          var content1 = document.getElementById("content1");
+          var content2 = document.getElementById("content2");
+          var content3 = document.getElementById("content3");
+          var btn1 = document.getElementById("btn1");
+          var btn2 = document.getElementById("btn2");
+          var btn3 = document.getElementById("btn3");
+          
+          function openHTML() {
+            content1.style.transform = "translateX(0)";
+            content2.style.transform = "translateX(300%)";
+            content3.style.transform = "translateX(300%)";
+            btn1.style.color = "#ea00ff";
+            btn2.style.color = "#000";
+            btn3.style.color = "#000";
+            content1.style.transitionDelay = "0.3s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0s";
+          }
+          
+          function openCSS() {
+            content1.style.transform = "translateX(300%)";
+            content2.style.transform = "translateX(0)";
+            content3.style.transform = "translateX(300%)";
+            btn1.style.color = "#000";
+            btn2.style.color = "#1100ff";
+            btn3.style.color = "#000";
+            content1.style.transitionDelay = "0";
+            content2.style.transitionDelay = "0.3s";
+            content3.style.transitionDelay = "0s";
+          }
+          
+          function openJS() {
+            content1.style.transform = "translateX(300%)";
+            content2.style.transform = "translateX(300%)";
+            content3.style.transform = "translateX(0)";
+            btn1.style.color = "#000";
+            btn2.style.color = "#000";
+            btn3.style.color = "#00ff2a";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0.3s";
+          }
+        </script>
+         
+      </div>
+     </section>
+     
+     <!-- second section end -->
+
+     <!-- third section -->
+
+     <section class="third">
+      <div class="third_wrap">
+
+         <div class="third_under">
+             <div class="third_img">
+
+             </div>
+
+             <div class="third_text">
+                 <h1><strong>하나의 완벽한 마스터피스</strong> <br> OPUST의 브랜드를 경험해보세요.</h1>
+                 <p>고귀한 당신만을 위한 프리미엄 공간, OPUST의 공간에서 완벽함을 누리십시오.</p>
+                 <p class="sub_font">The only, one Gallery</p>
+             </div>
+         </div>
+
+      </div>
+  </section>
+
+  <!-- third section end -->
+
+
+  <section class="fourth">
+
+    <div class="fourth_wrap">
+
+
+      <div class="fourth_under">
+          <div class="fourth_text">
+              <h1><strong>OPUST 갤러리 위치</strong> <br> 가장 품위있는곳, OPUST 갤러리</h1>
+              <p>서울특별시 강남구 청담동 80-001 번지 OPUST Gallery</p>
+              <p class="sub_font">예약 문의 : 1588-1001</p>
+          </div>
+
+          <div class="fourth_img">
+
+          </div>
+      </div>
+
+    </div>
+</section>
+
+            
+
+
+          <!--    footer section-->
+   
+    <footer>
+      
+        <div class="footer">
+        
+        <div class="left">
+            <div class="opust_logo_footer">
+                 <img src="image/opust_logo_white_ver.png" class="opustlogo_footer" alt="">
+             </div>
+             
+             
+             <div class="number">
+                <h1>고객센터</h1>
+                 <p>1588-1001</p>
+             
+              </div>
+        </div>
+         
+          <address>
+             <ul class="footer_menu">
+                 <li><a href="">이용약관</a></li>
+                 <li><a href="">개인정보처리방침</a></li>
+                 <li><a href="">이메일무단수집거부</a></li>
+             </ul>
+             <div class="line"></div>
+                 법인명 : (주)포스코건설 인천광역시 연수구 인천타워대로 241 <br>
+         등록번호 : 104-82-58181<br><span>ⓒ OPUST All rights reserved.</span>
+         
+          </address>
+       
+        
+         <div class="right">
+             <div class="thesharp box"><a href="https://www.thesharp.co.kr/index.aspx?code=mobile"> </a></div>
+             <div class="posco box"><a href=""> </a></div>
+         </div>
+         
+        </div>
+     </footer>
+     
+ <!--    footer end-->
+
+
+
+
+    </div>
+    <script>
+      var content1 = document.getElementById("content1");
+      var content2 = document.getElementById("content2");
+      var content3 = document.getElementById("content3");
+      var btn1 = document.getElementById("btn1");
+      var btn2 = document.getElementById("btn2");
+      var btn3 = document.getElementById("btn3");
+      
+      function openHTML() {
+        content1.style.transform = "translateX(0)";
+        content2.style.transform = "translateX(300%)";
+        content3.style.transform = "translateX(300%)";
+        btn1.style.color = "#113a7c";
+        btn2.style.color = "rgb(85, 85, 95)";
+        btn3.style.color = "rgb(85, 85, 95)";
+        content1.style.transitionDelay = "0.3s";
+        content2.style.transitionDelay = "0s";
+        content3.style.transitionDelay = "0s";
+      }
+      
+      function openCSS() {
+        content1.style.transform = "translateX(300%)";
+        content2.style.transform = "translateX(0)";
+        content3.style.transform = "translateX(300%)";
+        btn1.style.color = "rgb(85, 85, 95)";
+        btn2.style.color = "#113a7c";
+        btn3.style.color = "rgb(85, 85, 95)";
+        content1.style.transitionDelay = "0";
+        content2.style.transitionDelay = "0.3s";
+        content3.style.transitionDelay = "0s";
+      }
+      
+      function openJS() {
+        content1.style.transform = "translateX(300%)";
+        content2.style.transform = "translateX(300%)";
+        content3.style.transform = "translateX(0)";
+        btn1.style.color = "rgb(85, 85, 95)";
+        btn2.style.color = "rgb(85, 85, 95)";
+        btn3.style.color = "#113a7c";
+        content1.style.transitionDelay = "0s";
+        content2.style.transitionDelay = "0s";
+        content3.style.transitionDelay = "0.3s";
+      }
+    </script>
+<script src="script.js"></script>
+    <script src="./javascript/main.js"></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>  
+    
+    <script src="javascript/script.js"></script>
+    <script src="javascript/jsfile.js"></script>
+
+</body>
+</html>
